@@ -105,8 +105,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  overflow: hidden;
+  justify-content: center;
+  padding: 10px 20px 10px 180px;
+  overflow: visible;
 }
 
 /* === SKY & DAY/NIGHT CYCLE === */
@@ -446,16 +447,19 @@ body {
 
 /* === DUNELM BANNER === */
 .dunelm-banner {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 15px 40px;
+  gap: 20px;
+  padding: 20px 25px;
   background: var(--dunelm-green);
   border-radius: 8px;
-  margin-bottom: 20px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
@@ -514,8 +518,8 @@ body {
     2px 2px 4px rgba(0,0,0,0.5),
     0 0 30px rgba(255,215,0,0.3);
   text-align: center;
-  margin: 20px 0 5px;
   position: relative;
+  top: 10px;
   z-index: 10;
 }
 
@@ -525,7 +529,7 @@ body {
   color: rgba(255,255,255,0.8);
   font-style: italic;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 10;
 }
@@ -568,7 +572,7 @@ body {
 
 .roof-snow {
   position: absolute;
-  top: -10px;
+  top: 0px;
   left: 2%;
   width: 96%;
   height: 25px;
@@ -816,14 +820,49 @@ body {
   padding: 8px 12px;
   font-size: 0.65rem;
   color: var(--santa-black);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
   opacity: 0;
   transform: scale(0.8) rotate(-5deg);
   transition: all 0.3s ease;
-  z-index: 9999;
   pointer-events: none;
   text-align: center;
   white-space: nowrap;
+}
+
+/* Ensure all visible price tags and speech bubbles are absolutely on top of everything */
+.window:hover,
+.stocking:hover,
+.picture-frame:hover,
+.tv:hover,
+.present:hover,
+.armchair:hover,
+.rug:hover,
+.tree-star:hover,
+.cat-tree-ignored:hover,
+.fireplace:hover,
+.santa-stuck:hover,
+.cat:hover,
+.elf:hover {
+  z-index: 99999 !important;
+}
+
+.window:hover .price-tag,
+.stocking:hover .price-tag,
+.picture-frame:hover .price-tag,
+.tv:hover .price-tag,
+.present:hover .price-tag,
+.armchair:hover .price-tag,
+.rug:hover .price-tag,
+.tree-star:hover .price-tag,
+.cat-tree-ignored:hover .price-tag,
+.fireplace:hover .price-tag,
+.santa-stuck:hover .price-tag,
+.santa-stuck:hover .santa-speech,
+.cat:hover .cat-speech,
+.cat:hover .price-tag,
+.elf:hover .elf-speech {
+  z-index: 999999 !important;
+  opacity: 1;
 }
 
 .price-tag::before {
@@ -1041,7 +1080,7 @@ body {
   height: calc(100% - 70px);
   background: var(--wall-cream);
   border-radius: 0 0 10px 10px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 
     inset 0 0 100px rgba(255, 150, 50, 0.1),
     0 10px 40px rgba(0,0,0,0.4);
@@ -1059,7 +1098,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   pointer-events: none;
-  z-index: 80;
+  z-index: 50;
   animation: roomLighting 20s ease-in-out infinite;
 }
 
@@ -1926,7 +1965,7 @@ body {
   background: var(--rug-burgundy);
   border-radius: 5px;
   box-shadow: 0 3px 15px rgba(0,0,0,0.3);
-  z-index: 15;
+  z-index: 55;
   cursor: pointer;
 }
 
@@ -2337,10 +2376,12 @@ body {
   position: absolute;
   cursor: pointer;
   transition: transform 0.2s ease;
+  z-index: 95;
 }
 
 .present:hover {
   animation: presentShake 0.2s ease-in-out infinite;
+  z-index: 9999;
 }
 
 @keyframes presentShake {
@@ -2889,7 +2930,8 @@ body {
   right: 250px;
   width: 80px;
   height: 60px;
-  z-index: 35;
+  z-index: 55;
+  cursor: pointer;
 }
 
 .cat-body {
@@ -3229,7 +3271,8 @@ body {
   left: 320px;
   width: 50px;
   height: 80px;
-  z-index: 35;
+  z-index: 55;
+  cursor: pointer;
 }
 
 .elf-body {
@@ -3747,9 +3790,15 @@ body {
 
 @media (max-width: 900px) {
   .dunelm-banner {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 25px;
+    position: fixed;
+    top: auto;
+    transform: none;
+    flex-direction: row;
+    font-size: 0.8rem;
+  }
+  
+  .scene {
+    padding: 10px 20px 100px 20px;
   }
   
   .house {
