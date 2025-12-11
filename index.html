@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Night Before Christmas... at Dunelm</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="scene">
+    <!-- Sky with day/night cycle -->
+    <div class="sky">
+      <div class="sky-gradient"></div>
+      <div class="stars"></div>
+      <div class="stars stars--small"></div>
+      <div class="stars stars--medium"></div>
+      <div class="sun">
+        <div class="sun-rays"></div>
+      </div>
+      <div class="moon"></div>
+    </div>
+
+    <!-- Snow layers (parallax effect) -->
+    <div class="snow snow--back"></div>
+    <div class="snow snow--mid"></div>
+    <div class="snow snow--front"></div>
+
+    <!-- The Dunelm Logo Banner -->
+    <div class="dunelm-banner">
+      <div class="dunelm-logo">
+        <span class="dunelm-text">dunelm</span>
+        <span class="dunelm-tagline">The Home of Homes</span>
+      </div>
+      <div class="sale-flash">
+        <span>UP TO</span>
+        <span class="sale-percent">50% OFF</span>
+        <span>CHRISTMAS!</span>
+      </div>
+    </div>
+
+    <!-- Main title -->
+    <h1 class="title">The Home of Christmas</h1>
+    <h2 class="subtitle">with our best-selling living room display</h2>
+
+    <!-- The House/Room -->
+    <div class="house">
+      <!-- Roof -->
+      <div class="roof">
+        <div class="roof-snow"></div>
+        <div class="roof-tiles"></div>
+      </div>
+
+      <!-- Chimney with Santa! -->
+      <div class="chimney">
+        <div class="chimney-bricks"></div>
+        <div class="chimney-snow"></div>
+
+        <!-- Santa stuck! -->
+        <div class="santa-stuck">
+          <div class="santa-body"></div>
+          <div class="santa-legs">
+            <div class="leg leg--left">
+              <div class="boot boot--left">
+                <div class="boot-sole"></div>
+                <!-- Price tag on boot! -->
+                <div class="price-tag price-tag--boot">
+                  <span class="was">Was £89.99</span>
+                  <span class="now">NOW £39.99!</span>
+                  <span class="item-name">"Santa Boot" Ottoman</span>
+                </div>
+              </div>
+            </div>
+            <div class="leg leg--right">
+              <div class="boot boot--right">
+                <div class="boot-sole"></div>
+              </div>
+            </div>
+          </div>
+          <div class="santa-speech">
+            <p>Should've used the<br><strong>Click & Collect!</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Window -->
+      <div class="window">
+        <div class="window-frame">
+          <div class="window-pane window-pane--tl"></div>
+          <div class="window-pane window-pane--tr"></div>
+          <div class="window-pane window-pane--bl"></div>
+          <div class="window-pane window-pane--br"></div>
+        </div>
+        <div class="window-frost"></div>
+        <div class="window-glow"></div>
+        <div class="window-curtains">
+          <div class="curtain curtain--left"></div>
+          <div class="curtain curtain--right"></div>
+        </div>
+        <div class="price-tag price-tag--curtains">
+          <span class="was">Was £45.00</span>
+          <span class="now">NOW £29.99!</span>
+          <span class="item-name">"Nordic Nights" Curtains</span>
+        </div>
+      </div>
+
+      <!-- Room interior -->
+      <div class="room">
+        <!-- Day/Night cycle lighting overlay -->
+        <div class="room-lighting"></div>
+
+        <!-- Wall decorations -->
+        <div class="wall">
+          <div class="wallpaper-pattern"></div>
+
+          <!-- Picture frame -->
+          <div class="picture-frame">
+            <div class="picture-content">
+              <span class="picture-text">SHOP<br>WRAP<br>REPEAT</span>
+            </div>
+            <div class="price-tag price-tag--frame">
+              <span class="was">Was £24.99</span>
+              <span class="now">NOW £12.99!</span>
+              <span class="item-name">"Festive Wisdom" Print</span>
+            </div>
+          </div>
+
+          <!-- Wreath -->
+          <div class="wreath">
+            <div class="wreath-greenery"></div>
+            <div class="wreath-bow"></div>
+            <div class="wreath-berries">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <!-- TV -->
+          <div class="tv">
+            <div class="tv-frame">
+              <div class="tv-screen">
+                <iframe 
+                   src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=1&autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0"
+                   title="Important Holiday Message" 
+                   frameborder="0"
+                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                   allowfullscreen>
+                  </iframe>
+              </div>
+              <div class="tv-stand"></div>
+              <div class="tv-led"></div>
+            </div>
+            <div class="price-tag price-tag--tv">
+              <span class="was">Was £399.99</span>
+              <span class="now">NOW £299.99!</span>
+              <span class="item-name">"Cinema Experience" Smart TV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fireplace -->
+        <div class="fireplace">
+          <div class="fireplace-mantle">
+            <!-- Stockings -->
+            <div class="stocking stocking--1">
+              <div class="stocking-top"></div>
+              <div class="stocking-body"></div>
+              <div class="stocking-toe"></div>
+              <span class="stocking-name">Dave</span>
+              <div class="price-tag price-tag--stocking">
+                <span class="was">Was £8.99</span>
+                <span class="now">NOW £4.99!</span>
+                <span class="item-name">"Cozy Knit" Stocking</span>
+              </div>
+            </div>
+            <div class="stocking stocking--2">
+              <div class="stocking-top"></div>
+              <div class="stocking-body"></div>
+              <div class="stocking-toe"></div>
+              <span class="stocking-name">Karen</span>
+            </div>
+            <div class="stocking stocking--3">
+              <div class="stocking-top"></div>
+              <div class="stocking-body"></div>
+              <div class="stocking-toe"></div>
+              <span class="stocking-name">The Cat</span>
+            </div>
+
+            <!-- Garland on mantle -->
+            <div class="mantle-garland">
+              <div class="garland-segment"></div>
+              <div class="garland-segment"></div>
+              <div class="garland-segment"></div>
+            </div>
+
+            <!-- Candles on mantle -->
+            <div class="candle candle--1">
+              <div class="candle-body"></div>
+              <div class="candle-flame"></div>
+            </div>
+            <div class="candle candle--2">
+              <div class="candle-body"></div>
+              <div class="candle-flame"></div>
+            </div>
+            <div class="candle candle--3">
+              <div class="candle-body"></div>
+              <div class="candle-flame"></div>
+            </div>
+          </div>
+
+          <div class="fireplace-opening">
+            <div class="fire">
+              <div class="fire-flame fire-flame--1"></div>
+              <div class="fire-flame fire-flame--2"></div>
+              <div class="fire-flame fire-flame--3"></div>
+              <div class="fire-flame fire-flame--4"></div>
+              <div class="fire-flame fire-flame--5"></div>
+            </div>
+            <div class="fire-logs">
+              <div class="log log--1"></div>
+              <div class="log log--2"></div>
+              <div class="log log--3"></div>
+            </div>
+            <div class="fire-embers">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="fireplace-hearth"></div>
+          <div class="price-tag price-tag--fireplace">
+            <span class="now">Display Only</span>
+            <span class="item-name">(We wish we sold these)</span>
+          </div>
+        </div>
+
+        <!-- Floor -->
+        <div class="floor">
+          <div class="floorboards"></div>
+
+          <!-- Rug -->
+          <div class="rug">
+            <div class="rug-pattern"></div>
+            <div class="rug-fringe rug-fringe--left"></div>
+            <div class="rug-fringe rug-fringe--right"></div>
+            <div class="price-tag price-tag--rug">
+              <span class="was">Was £149.99</span>
+              <span class="now">NOW £89.99!</span>
+              <span class="item-name">"Scandi Snowflake" Rug</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Christmas Tree -->
+        <div class="tree-container">
+          <div class="tree">
+            <!-- Tree layers -->
+            <div class="tree-layer tree-layer--1"></div>
+            <div class="tree-layer tree-layer--2"></div>
+            <div class="tree-layer tree-layer--3"></div>
+            <div class="tree-layer tree-layer--4"></div>
+            <div class="tree-trunk"></div>
+
+            <!-- Star topper -->
+            <div class="tree-star">
+              <div class="star-shape"></div>
+              <div class="star-glow"></div>
+              <div class="price-tag price-tag--star">
+                <span class="last-one">⚠️ LAST ONE!</span>
+                <span class="was">Was £15.99</span>
+                <span class="now">NOW £7.99!</span>
+              </div>
+            </div>
+
+            <!-- Lights -->
+            <div class="tree-lights">
+              <span class="light light--1"></span>
+              <span class="light light--2"></span>
+              <span class="light light--3"></span>
+              <span class="light light--4"></span>
+              <span class="light light--5"></span>
+              <span class="light light--6"></span>
+              <span class="light light--7"></span>
+              <span class="light light--8"></span>
+              <span class="light light--9"></span>
+              <span class="light light--10"></span>
+              <span class="light light--11"></span>
+              <span class="light light--12"></span>
+              <span class="light light--13"></span>
+              <span class="light light--14"></span>
+              <span class="light light--15"></span>
+            </div>
+
+            <!-- Baubles -->
+            <div class="tree-baubles">
+              <span class="bauble bauble--red bauble--1"></span>
+              <span class="bauble bauble--gold bauble--2"></span>
+              <span class="bauble bauble--red bauble--3"></span>
+              <span class="bauble bauble--silver bauble--4"></span>
+              <span class="bauble bauble--gold bauble--5"></span>
+              <span class="bauble bauble--red bauble--6"></span>
+              <span class="bauble bauble--silver bauble--7"></span>
+              <span class="bauble bauble--gold bauble--8"></span>
+            </div>
+
+            <!-- Tinsel -->
+            <div class="tinsel tinsel--1"></div>
+            <div class="tinsel tinsel--2"></div>
+          </div>
+
+          <!-- Presents under tree -->
+          <div class="presents">
+            <div class="present present--1">
+              <div class="present-box"></div>
+              <div class="present-ribbon"></div>
+              <div class="present-bow"></div>
+
+              <div class="price-tag price-tag--present">
+                <span class="now">Click & Collect</span>
+                <span class="item-name">Order #7,492,847</span>
+              </div>
+            </div>
+            <div class="present present--2">
+              <div class="present-box"></div>
+              <div class="present-ribbon"></div>
+              <div class="present-bow"></div>
+            </div>
+            <div class="present present--3">
+              <div class="present-box"></div>
+              <div class="present-ribbon"></div>
+              <div class="present-bow"></div>
+            </div>
+            <div class="present present--4">
+              <div class="present-box"></div>
+              <div class="present-ribbon"></div>
+              <div class="present-bow"></div>
+            </div>
+          </div>
+
+          <div class="tree-skirt"></div>
+        </div>
+
+        <!-- Armchair -->
+        <div class="armchair">
+          <div class="chair-back"></div>
+          <div class="chair-seat">
+            <!-- Cushion! -->
+            <div class="cushion">
+              <div class="cushion-text">MERRY<br>&amp;<br>BRIGHT</div>
+            </div>
+          </div>
+          <div class="chair-arm chair-arm--left"></div>
+          <div class="chair-arm chair-arm--right"></div>
+          <div class="chair-leg chair-leg--left"></div>
+          <div class="chair-leg chair-leg--right"></div>
+          <div class="price-tag price-tag--chair">
+            <span class="was">Was £299.99</span>
+            <span class="now">NOW £199.99!</span>
+            <span class="item-name">"Fireside" Armchair</span>
+          </div>
+
+          <!-- Throw blanket on chair -->
+          <div class="throw-blanket">
+            <div class="throw-pattern"></div>
+            <div class="throw-fringe"></div>
+          </div>
+        </div>
+
+        <!-- Side table with cocoa -->
+        <div class="side-table">
+          <div class="table-top"></div>
+          <div class="table-legs"></div>
+
+          <!-- Hot cocoa -->
+          <div class="cocoa-mug">
+            <div class="mug-body"></div>
+            <div class="mug-handle"></div>
+            <div class="cocoa-liquid"></div>
+            <div class="marshmallows">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="steam">
+              <span class="steam-1"></span>
+              <span class="steam-2"></span>
+              <span class="steam-3"></span>
+            </div>
+          </div>
+
+          <!-- Mince pie -->
+          <div class="mince-pie">
+            <div class="pie-base"></div>
+            <div class="pie-top"></div>
+            <div class="pie-bite"></div>
+          </div>
+
+          <!-- Note for Santa -->
+          <div class="santa-note">
+            <span>Dear Santa,</span>
+            <span>Milk is in</span>
+            <span>the fridge.</span>
+            <span>We have</span>
+            <span>Oat milk if</span>
+            <span>you prefer.</span>
+          </div>
+        </div>
+
+        <!-- The Cat! -->
+        <div class="cat">
+          <div class="cat-body"></div>
+          <div class="cat-head">
+            <div class="cat-ear cat-ear--left"></div>
+            <div class="cat-ear cat-ear--right"></div>
+            <div class="cat-face">
+              <div class="cat-eye cat-eye--left"></div>
+              <div class="cat-eye cat-eye--right"></div>
+              <div class="cat-nose"></div>
+              <div class="cat-whiskers cat-whiskers--left"></div>
+              <div class="cat-whiskers cat-whiskers--right"></div>
+            </div>
+          </div>
+          <div class="cat-tail"></div>
+          <div class="cat-paw cat-paw--batting">
+            <div class="paw-swipe"></div>
+          </div>
+
+          <!-- Cat speech bubble -->
+          <div class="cat-speech">
+            <p>*ignores £40<br>cat tree*</p>
+          </div>
+
+          <!-- Dangling ornament the cat is batting -->
+          <div class="dangling-bauble">
+            <div class="bauble-string"></div>
+            <div class="bauble bauble--red"></div>
+          </div>
+
+          <!-- Ignored cat tree in background -->
+          <div class="cat-tree-ignored">
+            <div class="cat-tree-post"></div>
+            <div class="cat-tree-platform"></div>
+            <div class="price-tag price-tag--cat-tree">
+              <span class="was">Was £79.99</span>
+              <span class="now">NOW £39.99!</span>
+              <span class="item-name">"Luxury" Cat Tree</span>
+              <span class="unused">(Unused)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exhausted Elf -->
+        <div class="elf">
+          <div class="elf-body">
+            <div class="elf-tunic"></div>
+            <div class="elf-belt"></div>
+            <div class="elf-legs">
+              <div class="elf-leg elf-leg--left"></div>
+              <div class="elf-leg elf-leg--right"></div>
+            </div>
+            <div class="elf-shoes">
+              <div class="elf-shoe elf-shoe--left"></div>
+              <div class="elf-shoe elf-shoe--right"></div>
+            </div>
+          </div>
+          <div class="elf-arms">
+            <div class="elf-arm elf-arm--left"></div>
+            <div class="elf-arm elf-arm--right">
+              <!-- Clipboard -->
+              <div class="clipboard">
+                <div class="clipboard-paper">
+                  <span>BOXING</span>
+                  <span>DAY</span>
+                  <span>PREP</span>
+                  <span class="checklist">☐ ☐ ☐</span>
+                  <span class="checklist">☑ ☐ ☐</span>
+                  <span class="checklist">☐ ☐ ☐</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elf-head">
+            <div class="elf-face">
+              <div class="elf-eye elf-eye--left">
+                <div class="elf-eyebag"></div>
+              </div>
+              <div class="elf-eye elf-eye--right">
+                <div class="elf-eyebag"></div>
+              </div>
+              <div class="elf-nose"></div>
+              <div class="elf-mouth"></div>
+              <div class="elf-cheeks">
+                <span></span><span></span>
+              </div>
+            </div>
+            <div class="elf-ears">
+              <div class="elf-ear elf-ear--left"></div>
+              <div class="elf-ear elf-ear--right"></div>
+            </div>
+            <div class="elf-hat">
+              <div class="hat-base"></div>
+              <div class="hat-tip"></div>
+              <div class="hat-pompom"></div>
+            </div>
+          </div>
+
+          <!-- Elf speech -->
+          <div class="elf-speech">
+            <p>Only 364 days<br>until next<br>Christmas...</p>
+          </div>
+
+          <!-- Coffee cup -->
+          <div class="elf-coffee">
+            <div class="coffee-cup"></div>
+            <div class="coffee-label">5th cup</div>
+          </div>
+        </div>
+
+        <!-- Mouse peeking from presents -->
+        <div class="mouse">
+          <div class="mouse-body"></div>
+          <div class="mouse-head">
+            <div class="mouse-ear mouse-ear--left"></div>
+            <div class="mouse-ear mouse-ear--right"></div>
+            <div class="mouse-eye"></div>
+            <div class="mouse-nose"></div>
+            <div class="mouse-whiskers"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
